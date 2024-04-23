@@ -3,4 +3,6 @@
 コンポーネントテスト2
 
 <x-tests.card title="タイトル2" />
+
+<x-test-class-base/>
 </x-tests.app>
