@@ -24,12 +24,12 @@ use App\Http\Controllers\Admin\Auth\VerifyEmailController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('admin.welcome');
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+    return view('admin.dashboard');
+})->middleware(['auth:admin'])->name('dashboard');
 
 
 Route::middleware('guest')->group(function () {
